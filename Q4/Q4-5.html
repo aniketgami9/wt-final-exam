@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort in JavaScript</title>
+    <h1>look at console to see the answer</h1>
+    <h1>Prices are sorted in Ascending Order First & than descending order </h1>
+</head>
+<body>
+    <script>
+        const UserCart = [{productID:1, productName:"Mobile",price:70000},
+                         {productID:2, productName:"Laptop",price:100000},
+                         {productID:3, productName:"Airpods",price:26900},
+                         {productID:4, productName:"Watch",price:30000},
+                         {productID:5, productName:"Shoes",price:35000},
+                         {productID:6, productName:"Bag",price:10000}] 
+
+        const UserCart1 = [{productID:1, productName:"Mobile",price:70000},
+                         {productID:2, productName:"Laptop",price:100000},
+                         {productID:3, productName:"Airpods",price:26900},
+                         {productID:4, productName:"Watch",price:30000},
+                         {productID:5, productName:"Shoes",price:35000},
+                         {productID:6, productName:"Bag",price:10000}] 
+//Ascending Order  
+    UserCart.sort((a, b) => {
+        return a.price - b.price;
+    });
+    console.log(UserCart.sort());
+
+    // Descending Order
+    UserCart1.sort((e, f) => {
+        return f.price - e.price
+        });
+    console.log(UserCart1.sort());
+    </script>
+</body>
+</html>

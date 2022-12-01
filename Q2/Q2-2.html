@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>JavaScript</h2>
+    <p id="demo">
+    <p>inAscOrder([1,2,4,7,19])</p>
+    <p>inAscOrder([1,2,3,4,5])</p>
+    <h1>Check console too</h1>
+    </p>
+    <script>
+
+        function arraySortedOrNot(arr, n) {
+            if (n == 1 || n == 0)
+                return 1;
+            if (arr[n - 1] < arr[n - 2])
+                return 0;
+            return arraySortedOrNot(arr, n - 1);
+        }
+
+        let arr = [1,2,3,4,5];
+        let n = arr.length;
+        if (arraySortedOrNot(arr, n) != 0)
+            document.write("true");
+        else
+            document.write("false");
+
+
+    </script>
+</body>
+
+</html>
